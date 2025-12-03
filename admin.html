@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management Page</title>
+    <style>
+     body{
+        font-family: arial,sans-serif;
+        text-align: center;
+        padding:20px;
+
+    }
+    .container{
+        margin-bottom: 20px;
+    }
+    .grid-container{
+        margin: 15px;
+    }
+    .button{
+        padding:10px 20px;
+        background:rgb(24, 112, 146);
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px;
+    }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Book Management Page</h1>
+    <button onclick="location.href='index.html'" class="button">Home</button>
+   </div>
+   <div class="grid-container">
+    <input type="text" id="title" placeholder="Book Title">
+    <input type="text" id="title" placeholder="Author Name">
+    <select id="category">
+        <option value="Fiction">Fiction</option>
+         <option value="Comedy">Comedy</option>
+          <option value="Technical">Technical</option>
+    </select>
+    <button id="addbookbutton" class="button">Add Book</button>
+   </div>
+
+
+
+</body>
+</html>
