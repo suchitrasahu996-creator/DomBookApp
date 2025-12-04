@@ -5,31 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
   <style>
-    body{
+     body{
         font-family: arial,sans-serif;
-        text-align: center;
-        padding:20px;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        flex-direction: column;
 
     }
-    .container{
+    h1{
         margin-bottom: 20px;
     }
     .button{
         padding:10px 20px;
+        font-size: 18px;
+        cursor: pointer;
         background:rgb(24, 112, 146);
         color: white;
-        cursor: pointer;
-        border-radius: 5px;
-        border: 1px;
+        border-radius: 6px;
+        border: none;
+    }
+    .button:hover{
+        background: rgb(0, 136, 255);
     }
   </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Book Management App</h1>
-    <button onclick="location.href='admin.html'" class="button">Go to Admin Page </button>
-</div>
    
+        <h1>Welcome to Book Management App</h1>
+        <button id="btn">Go to Admin Page</button>
+
+        <script>
+            document.getElementById("btn").addEventListener("click", () => {
+        window.location.href = 'admin.html'
+    });
+        </script>
+ 
     
 </body>
 </html>
